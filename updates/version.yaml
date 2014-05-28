@@ -4,3 +4,5 @@
   - Create FaqGroups and Questions tables
   - create_faq_groups_table.php
   - create_questions_table.php
+1.0.3:
+  - Updated Plugin Menu to have active class

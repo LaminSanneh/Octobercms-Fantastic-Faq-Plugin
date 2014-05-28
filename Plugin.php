@@ -33,15 +33,15 @@ class Plugin extends PluginBase
     public function registerNavigation()
     {
         return [
-            'contactForm' => [
+            'fantasticfaq' => [
                 'label'       => 'Faq Groups',
                 'url'         => Backend::url('laminsanneh/fantasticfaq/faqgroups'),
                 'icon'        => 'icon-pencil',
-                'permissions' => ['laminsanneh.fantasticfaq.access_faqgroups'],
+                'permissions' => ['laminsanneh.fantasticfaq.*'],
                 'order'       => 500,
 
                 'sideMenu' => [
-                    'formgroups' => [
+                    'faqgroups' => [
                         'label'       => 'All Form Groups',
                         'url'         => Backend::url('laminsanneh/fantasticfaq/faqgroups'),
                         'icon'        => 'icon-pencil',
