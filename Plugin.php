@@ -36,7 +36,7 @@ class Plugin extends PluginBase
             'fantasticfaq' => [
                 'label'       => 'Faq Groups',
                 'url'         => Backend::url('laminsanneh/fantasticfaq/faqgroups'),
-                'icon'        => 'icon-pencil',
+                'icon'        => 'icon-bullhorn',
                 'permissions' => ['laminsanneh.fantasticfaq.*'],
                 'order'       => 500,
 
