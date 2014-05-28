@@ -5,3 +5,5 @@
 columns:
     id:
         label: ID
+    title:
+    body:

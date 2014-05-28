@@ -3,6 +3,8 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    title:
+        label: The title of the question
+    body:
+        label: The body of the question
+        type: textarea

@@ -21,7 +21,7 @@ class Question extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = ['title','body'];
 
     /**
      * @var array Validation rules

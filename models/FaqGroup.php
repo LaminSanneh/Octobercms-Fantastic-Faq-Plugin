@@ -21,7 +21,7 @@ class FaqGroup extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = ['name'];
 
     /**
      * @var array Validation rules
@@ -32,7 +32,9 @@ class FaqGroup extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [];
+    public $hasMany = [
+        'questions' => ['\LaminSanneh\FantasticFaq\Models\Question', 'primaryKey' => 'group_id']
+    ];
     public $belongsTo = [];
     public $belongsToMany = [];
     public $morphTo = [];
@@ -41,4 +43,7 @@ class FaqGroup extends Model
     public $attachOne = [];
     public $attachMany = [];
 
+//    public function questions(){
+//        return $this->hasMany('\LaminSanneh\FantasticFaq\Models\Question', 'group_id');
+//    }
 }

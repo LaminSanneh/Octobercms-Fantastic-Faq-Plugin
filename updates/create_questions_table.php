@@ -12,6 +12,10 @@ class CreateQuestionsTable extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->integer('group_id')->unsigned();
+            $table->foreign('group_id')->references('id')->on('laminsanneh_fantasticfaq_faq_groups');
+            $table->string('title');
+            $table->text('body');
             $table->timestamps();
         });
     }
