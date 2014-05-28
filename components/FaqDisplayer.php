@@ -22,6 +22,12 @@ class FaqDisplayer extends ComponentBase
                 'description' => 'An Faq Group containing questions',
                 'type'        => 'dropdown',
                 'default'     => ''
+            ],
+            'injectBootstrapAssets' => [
+                'title'       => 'Inject Bootstrap Assets',
+                'description' => 'Whether To Insert bootstrap css and javascript files',
+                'type'        => 'checkbox',
+                'default'     => true,
             ]
         ];
     }
@@ -39,7 +45,9 @@ class FaqDisplayer extends ComponentBase
 
     public function onRun()
     {
-        $this->addCss('assets/css/bootstrap.css');
-        $this->addJs('assets/js/bootstrap.js');
+        if($this->property('injectBootstrapAssets') == true){
+            $this->addCss('assets/css/bootstrap.css');
+            $this->addJs('assets/js/bootstrap.js');
+        }
     }
 }
