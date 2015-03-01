@@ -8,3 +8,5 @@
   - Updated Plugin Menu to have active class
 1.0.4:
   - Updated backend menu icon
+1.0.5:
+  - Register Permission for user management
