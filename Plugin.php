@@ -30,6 +30,15 @@ class Plugin extends PluginBase
         ];
     }
 
+    /* register permissions */
+
+    public function registerPermissions()
+    {
+        return [
+            'laminsanneh.fantasticfaq.access_faqgroups'       => ['tab' => 'Fantastic FAQ', 'label' => 'Manage the FAQs']
+        ];
+    }
+
     public function registerNavigation()
     {
         return [
