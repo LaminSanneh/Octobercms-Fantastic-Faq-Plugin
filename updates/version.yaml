@@ -10,3 +10,5 @@
   - Updated backend menu icon
 1.0.5:
   - Register Permission for user management
+1.0.6:
+  - Fixed upgrade/broken changes bug introduced by laravel 5 upgrade

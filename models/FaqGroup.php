@@ -33,7 +33,7 @@ class FaqGroup extends Model
      */
     public $hasOne = [];
     public $hasMany = [
-        'questions' => ['\LaminSanneh\FantasticFaq\Models\Question', 'primaryKey' => 'group_id']
+        'questions' => ['\LaminSanneh\FantasticFaq\Models\Question', 'key' => 'group_id']
     ];
     public $belongsTo = [];
     public $belongsToMany = [];
