@@ -15,3 +15,5 @@
 1.0.7:
   - Fixing FOREIGN KEY error when removing FAQ question from FAQ group by making group_id nullable
   - group_id_is_nullable.php
+1.0.8:
+  - Update Readme File
