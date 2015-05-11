@@ -12,3 +12,6 @@
   - Register Permission for user management
 1.0.6:
   - Fixed upgrade/broken changes bug introduced by laravel 5 upgrade
+1.0.7:
+  - Fixing FOREIGN KEY error when removing FAQ question from FAQ group by making group_id nullable
+  - group_id_is_nullable.php
